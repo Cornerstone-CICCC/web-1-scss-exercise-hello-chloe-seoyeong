@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 @import 'header';
+@import 'buttons';
 @import 'footer';
 
 body {
@@ -16,6 +17,22 @@ main {
     border-radius: 5px;
     h2 {
       color: $primary-color;
+    }
+  }
+
+  .cards {
+    @include flex-center;
+    justify-content: space-around;
+    .card {
+      @include makeBorder(2px, solid, $line-color);
+      @include borderRadius(8px);
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          padding: $font-size * $i;
+        }
+      }
+      background-color: $card-bg;
+      text-align: cetner;
     }
   }
 }

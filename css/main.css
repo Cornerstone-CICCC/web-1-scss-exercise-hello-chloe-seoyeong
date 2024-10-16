@@ -21,6 +21,13 @@ header nav ul li a {
   text-decoration: none;
 }
 
+button {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(34.7392, 154.0608, 85.3376);
+  color: white;
+}
+
 footer {
   background-color: #2ecc71;
   color: white;
@@ -43,6 +50,27 @@ main section {
 }
 main section h2 {
   color: #3498db;
+}
+main .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+main .cards .card {
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #ff6922;
+  text-align: cetner;
+}
+main .cards .card:nth-child(1) {
+  padding: 16px;
+}
+main .cards .card:nth-child(2) {
+  padding: 32px;
+}
+main .cards .card:nth-child(3) {
+  padding: 48px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,3 +3,11 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin borderRadius ($radious: 10px) {
+  border-radius: $radious;
+}
+
+@mixin makeBorder ($stroke: 1px, $type: solid, $color) {
+  border: $stroke $type $color;
+}

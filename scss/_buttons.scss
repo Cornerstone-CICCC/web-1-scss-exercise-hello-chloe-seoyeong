@@ -1,0 +1,9 @@
+@import 'variables';
+@import 'mixins';
+
+button {
+  @include borderRadius(5px);
+  padding: 10px;
+  background-color: darken($secondary-color, 12%);
+  color: white;
+}
